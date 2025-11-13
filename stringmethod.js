@@ -304,12 +304,12 @@
 // console.log(properties.name);
 
 //3.person.age утгыг шинэчлээд 30 болго.//const properties = {
-const person = {
-  name: "Khulan",
-  ago: 20,
-  city: "ub",
-};
-console.log(person.ago);
+// const person = {
+//   name: "Khulan",
+//   ago: 20,
+//   city: "ub",
+// };
+// console.log(person.ago);
 
 //4.person объектод шинэ job шинж чанар нэмээд 'developer' гэж оноо.//
 // const person1 = {
@@ -332,16 +332,308 @@ console.log(person.ago);
 
 //6.Хоёр объект (user1, user2)-ийг Object.assign() ашиглан нэгтгэ.//
 
-const user1 = { name: "khulan", ago: 20 };
-const user2 = { job: "developer" };
+// const user1 = { name: "khulan", ago: 20 };
+// const user2 = { job: "developer" };
 
-const hoyr = Object.assign({}, user1, user2);
-console.log(hoyr);
+// const hoyr = Object.assign({}, user1, user2);
+// console.log(hoyr);
 
 //7.Object.keys() ашиглан объектын бүх түлхүүрүүдийг массив болгон ав.//
+// const student = {
+//   name: "khulan",
+//   city: "UB",
+//   job: "developer",
+// };
+
+// const keys = Object.keys(student);
+// console.log(keys);
 
 //8.Object.values() ашиглан бүх утгуудыг массив болгон ав.//
+// const student = {
+//   name: "khulan",
+//   city: "UB",
+//   job: "developer",
+// };
+
+// const keys = Object.values(student);
+// console.log(keys);
 
 //9.Object.entries() ашиглан түлхүүр-утгын хосуудыг массив болгон ав.//
+// const student = {
+//   name: "khulan",
+//   city: "UB",
+//   job: "developer",
+// };
+
+// const keys = Object.entries(student);
+// console.log(keys);
 
 //10.Объект дотор тодорхой түлхүүр ("email") байгаа эсэхийг 'email' in user хэлбэрээр шалга.//
+
+// const email = "dhulan77@gmail.com";
+// console.log(email.includes("@"));
+
+//11.for...in давталт ашиглан объектын бүх түлхүүр болон утгуудыг хэвлэ.
+// const person = {
+//   name: "Khulan",
+//   age: 20,
+//   city: "Ulaanbaatar",
+// };
+
+// for (let key in person) {
+//   console.log(key + ": " + person[key]);
+// }
+
+//12.Object.freeze() ашиглан объектын утгыг өөрчлөх боломжгүй болгож оролдоод турш.
+// const sun = {
+//   name: "khulan",
+//   city: "Ulaanbaatar",
+//   job: "developer",
+// };
+
+// const sum = Object.freeze(sun);
+// console.log(sum);
+
+//13.Хоёр объектын утгуудыг spread (...) ашиглан нэг шинэ объект үүсгэ.
+// const user1 = {
+//   name: "Khulan",
+//   age: 20,
+// };
+
+// const user2 = {
+//   city: "Ulaanbaatar",
+//   job: "Developer",
+// };
+
+// const mergedUser = { ...user1, ...user2 };
+
+// console.log(mergedUser);
+
+//14.Хоосон объект үүсгээд дараалан өөрийн хүссэн 3 properties g  нэм.
+// const num = {};
+
+// (num.name = "khulan"), (num.age = 20), (num.city = "UB");
+// console.log(num);
+
+//15.Нэг объектын тодорхой утгыг өөр объект руу хуулах (clone) үйлдэл хийгээрэй.
+// const person = {
+//   name: "Khulan",
+//   age: 20,
+//   city: "Ulaanbaatar",
+//   job: "developer",
+// };
+
+// const person1 = { ...person };
+// console.log(person1);
+
+//16.Объектын бүх түлхүүрийг length-ээр тоол.
+// const person = {
+//   name: "Khulan",
+//   age: 22,
+//   city: "Ulaanbaatar",
+// };
+
+// const keyCount = Object.keys(person).length;
+// console.log(keyCount);
+
+//17.Object.hasOwnProperty() ашиглан user объектод password байгаа эсэхийг шалга.
+// const user = {
+//   username: "khulan",
+//   email: "khulan174@gmail.com",
+// };
+
+// const hasPassword = user.hasOwnProperty("password");
+
+// console.log(hasPassword);
+
+//18.JSON.stringify() ашиглан объектоо string болгон хөрвүүл.
+
+//19.JSON.parse() ашиглан string-ийг буцааж объект болгож хөрвүүл.
+
+//CALLBACK//
+
+//1.greet(name, callback) — “Hello, [name]!” гэж хэвлээд дараа нь callback-ийг дууд.//
+// const greet = (name, callback) => {
+//   console.log(`Hello, ${name}!`);
+//   callback();
+// };
+// const printHello = () => {
+//   console.log("hello11");
+// };
+// greet("james", printHello);
+
+//2.add(a, b, callback) — 2 тоог нийлүүлээд үр дүнг callback-р буцаа.//
+// const secondFunction = (a, b, callback) => {
+//   const templateString = `${a}, ${b}`;
+//   callback(a, b);
+// };
+
+// const print = (text1, text2) => {
+//   console.log(text1, text2);
+// };
+
+// secondFunction(1, 2, print);
+
+//3.calculateSquare(num, callback) — тооны квадратыг тооцоод callback-д дамжуул.//
+
+// const calculateSquare = (num, callback) => {
+//   const result = num * num;
+//   callback(result);
+// };
+
+// const print = (text1) => {
+//   console.log(text1);
+// };
+
+// calculateSquare(5, print);
+
+//4.sayGoodbye(callback) — “Goodbye!” гэж хэвлээд дараа нь callback-г ажиллуул.//
+
+// const sayGoodbye = (asd, callback) => {
+//   const text1 = `${asd}`;
+//   callback(text1);
+// };
+// const print = (text2) => {
+//   console.log(text2);
+// };
+
+// sayGoodbye("Goodbye!", print);
+
+//printMessage(callback) — 2 секунд хүлээгээд callback-г ажиллуул.//
+
+// const printMessage = (callback) => {
+//   setTimeout(() => {
+//     const text = `hi`;
+//     callback(text);
+//   }, 2000);
+// };
+
+// const add = (message) => {
+//   console.log(message);
+// };
+// printMessage(add);
+
+//5.displaySum(a, b, callback) — нийлбэрийг тооцоод callback ашиглан хэвлэ.//
+// const displaySum = (a, b, callback) => {
+//   const niilber = a + b;
+//   console.log(niilber);
+// };
+
+// const print = (text) => {
+//   console.log(text);
+// };
+
+// displaySum(77, 77, print);
+
+//6.checkEven(num, callback) — тоо тэгш эсэхийг шалгаад үр дүнг callback-д өг.//
+
+// const checkEven = (num, callback) => {
+//   const tegsh = num % 2 === 0;
+//   callback(tegsh);
+// };
+// const print = (text5) => {
+//   console.log(text5);
+// };
+
+// checkEven(48, print);
+
+//7.showAlert(callback) — confirm("Continue?") true бол callback-г ажиллуул.//
+
+// const showAlert = (callback) => {
+//   const confirm = `"Continue?"`;
+//   callback(confirm);
+// };
+// const print = (text6) => {
+//   console.log(text6);
+// };
+
+// showAlert(print);
+
+//8.repeatThreeTimes(callback) — callback-г 3 удаа ажиллуул.//
+
+// const repeatThreeTimes = (times) => {
+//   const thre = `${times}"developer`;
+//   callback(thre);
+// };
+// for (let i = 0; i < times.length; i++) {
+//   console.log(i);
+// }
+
+// const repeatThreeTimes = (callback) => {
+//   for (let i = 0; i < 3; i++) {
+//     const thre = `${i} developer`;
+//     callback(thre);
+//   }
+// };
+// const teg = (text) => {
+//   console.log(text);
+// };
+
+// repeatThreeTimes(teg);
+
+//9.printArray(arr, callback) — массивын элемент бүрт callback-г ажиллуул.//
+
+// const printArray = (arr, callback) => {
+//   const arr = `"energy"`;
+//   callback(arr);
+// };
+// const print = (text) => {
+//   console.log(text);
+// };
+
+// printArray(print);
+
+//10.getLength(str, callback) — string-ийн уртыг callback-р буцаа.//
+// const getLength = (str, callback) => {
+//   const length = str.length;
+//   callback(length);
+// };
+
+// const printLength = (len) => {
+//   console.log(len);
+// };
+
+// getLength("Hello, world!", printLength);
+
+//11.toUpperCase(str, callback) — үгийг том үсэг болгон callback-д өг.//
+// const toUpperCase = (str, callback) => {
+//   const upper = str.toUpperCase();
+//   callback(upper);
+// };
+// const print = (text) => {
+//   console.log(text);
+// };
+
+// toUpperCase("developer", print);
+
+//12.randomNumber(callback) — 1–10 хооронд санамсаргүй тоо гаргаад callback-д өг.//
+
+// const randomNumber = (callback) => {
+//   const number = Math.floor(Math.random() * 10) + 1;
+//   callback(number);
+// };
+
+// const print = (num) => {
+//   console.log(num);
+// };
+// randomNumber(print);
+
+//13.checkPositive(num, callback) — тоо эерэг эсэхийг шалгаад callback-д функцээр хэвлэ.//
+
+//14.checkStringLength(str, callback) — урт нь 5-аас урт эсэхийг callback-д функцээр хэвлэ.//
+
+//15.checkStartsWith(str, char, callback) — string тухайн үсгээр эхэлж байгаа эсэхийг callback-д функцээр хэвлэ.//
+
+//16.checkLogin(username, password, callback) — зөв хэрэглэгчийг шалгаад callback-д функцээр true false хэвлэ.//
+
+//17.isAdult(age, callback) — нас 18-аас дээш бол true-г callback-д өг.//
+
+//18.checkNumberType(num, callback) — тоо сондгой эсвэл тэгш гэдгийг callback-д өг.//
+
+//19.printEach(arr, callback) — массивын элемент бүрт callback-г ажиллуул.//
+
+//20.repeatNTimes(n, callback) — callback-г n удаа ажиллуул.//
+
+//21.countToFive(callback) — 1-ээс 5 хүртэл тоо хэвлээд дараа нь callback-г дуудаж “Done” гэж хэл.//
+
+//22.sumArray(arr, callback) — нийлбэрийг тооцоод callback-д дамжуул.//
