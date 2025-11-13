@@ -1,5 +1,7 @@
 ///String method bodlogo. Function ashiglaj bodno.//
 
+const { useCallback } = require("react");
+
 //1.const text = "JavaScript"; svvliin characteriin indexiig ol.//
 
 // const textText = (text) => {
@@ -619,6 +621,15 @@
 // randomNumber(print);
 
 //13.checkPositive(num, callback) — тоо эерэг эсэхийг шалгаад callback-д функцээр хэвлэ.//
+
+const checkPositive = (num, callback) => {
+  const mm = `${num}`;
+  callback(mm);
+};
+const print = (text) => {
+  console.log(text);
+};
+checkPositive(22, print);
 
 //14.checkStringLength(str, callback) — урт нь 5-аас урт эсэхийг callback-д функцээр хэвлэ.//
 
