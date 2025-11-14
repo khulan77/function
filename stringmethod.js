@@ -1,7 +1,5 @@
 ///String method bodlogo. Function ashiglaj bodno.//
 
-const { useCallback } = require("react");
-
 //1.const text = "JavaScript"; svvliin characteriin indexiig ol.//
 
 // const textText = (text) => {
@@ -622,29 +620,107 @@ const { useCallback } = require("react");
 
 //13.checkPositive(num, callback) — тоо эерэг эсэхийг шалгаад callback-д функцээр хэвлэ.//
 
-const checkPositive = (num, callback) => {
-  const mm = `${num}`;
-  callback(mm);
-};
-const print = (text) => {
-  console.log(text);
-};
-checkPositive(22, print);
+// const checkPositive = (num, callback) => {
+//   const mm = `${num} eyreg`;
+//   callback(mm);
+// };
+// const print = (text) => {
+//   console.log(text);
+// };
+// checkPositive(22, print);
 
 //14.checkStringLength(str, callback) — урт нь 5-аас урт эсэхийг callback-д функцээр хэвлэ.//
+// const checkStartsWith = (str, callback) => {
+//   const urt = str.length > 5;
+//   callback(urt);
+// };
+// const print = (text1) => {
+//   console.log(text1);
+// };
+
+// checkStartsWith("developer", print);
 
 //15.checkStartsWith(str, char, callback) — string тухайн үсгээр эхэлж байгаа эсэхийг callback-д функцээр хэвлэ.//
+
+const checkStartsWith = (str, char, callback) => {};
 
 //16.checkLogin(username, password, callback) — зөв хэрэглэгчийг шалгаад callback-д функцээр true false хэвлэ.//
 
 //17.isAdult(age, callback) — нас 18-аас дээш бол true-г callback-д өг.//
 
+// const isAdult = (age, callback) => {
+//   const nas = age > 18;
+//   callback(nas);
+// };
+// const print = (text3) => {
+//   console.log(text3);
+// };
+
+// isAdult(20, print);
+
 //18.checkNumberType(num, callback) — тоо сондгой эсвэл тэгш гэдгийг callback-д өг.//
 
+// const checkNumberType = (num, callback) => {
+//   const tegsh = num % 2 === 1;
+//   callback(tegsh);
+// };
+// const print = (text5) => {
+//   console.log(text5);
+// };
+
+// checkNumberType(10, print);
 //19.printEach(arr, callback) — массивын элемент бүрт callback-г ажиллуул.//
 
+// const printEach = (arr, callback) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     callback(arr[i]);
+//   }
+// };
+// const result = (array) => {
+//   console.log(array);
+// };
+
+// printEach([1, 2, 3, 4, 5, 6, 7, 8], result);
+
 //20.repeatNTimes(n, callback) — callback-г n удаа ажиллуул.//
+// const repeatNTimes = (n, callback) => {
+//   for (let i = 0; i < 3; i++) {
+//     callback(n[i]);
+//   }
+// };
+// const print = (text9) => {
+//   console.log(text9);
+// };
+
+// repeatNTimes([5, 3, 6], print);
 
 //21.countToFive(callback) — 1-ээс 5 хүртэл тоо хэвлээд дараа нь callback-г дуудаж “Done” гэж хэл.//
+// const countToFive = (callback) => {
+//   for (let i = 1; i <= 5; i++) {
+//     console.log(i);
+//   }
+//   callback("Done");
+// };
+// const result = (text10) => {
+//   console.log(text10);
+// };
+
+// countToFive(result);
 
 //22.sumArray(arr, callback) — нийлбэрийг тооцоод callback-д дамжуул.//
+
+// const sumArray = (arr, callback) => {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+
+//   callback(sum);
+// };
+
+// const print = (result) => {
+//   console.log(result);
+// };
+
+// sumArray([1, 2, 3, 4, 5], print);
