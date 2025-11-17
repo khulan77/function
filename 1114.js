@@ -442,22 +442,111 @@ const truthy = [2, 5, 6, 9];
 
 //22.Тоон массивын дунджийг reduce ашиглан ол.//
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-const rec = numbers.reduce((a, b) => a + b, 0) / numbers.length;
-console.log(rec);
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// const rec = numbers.reduce((a, b) => a + b, 0) / numbers.length;
+// console.log(rec);
 
 //23.Үгсийн массиваас үгийн давтамжийн объект үүсгэ.//
+// const withUg = ["summer", "spring", "winter", "autumn"]
+// const dawtamj = withUg.reduce((acc, ug) =>{
+//   acc[ug]= (acc[ug] || 0) + 1;
+//   return acc;
+// }, {})
+// console.log(dawtamj);
+
 
 //24.Худалдан авалтын массивын нийт үнийг ол.
 
+// const une = [10500, 21000, 9900];
+
+// const niitUne = une.reduce((a,b) => a+b ,0);
+// console.log(niitUne);
+
+
 //25.Массивын хамгийн том утгыг reduce ашиглан ол.//
+
+// const numbers = [22,33,44,55,77,99];
+
+// const maxNumbers = numbers.reduce((acc, num) => num > acc ? num : acc);
+// console.log(maxNumbers);
+//acc = odoogiin hamgiin ih utga//
+//num = massiviin odoo dawtalt awch baigaa element//
+
+
 
 //26.Массив дахь хамгийн урт стрингийг ол.//
 
+// const lengTh = ["happy", "birthday", "to", "you"];
+
+// const longest = lengTh.reduce((word ,acc) => word.length > acc.length ? word : acc)
+// console.log(longest);
+
+
 //27.Объектын массивыг ID-ээр нь объект болгон хувирга (id-тэй map).//
+
+
 
 //28.Тоонуудаас нийлбэр, хамгийн их, хамгийн бага утгуудыг нэг reduce-ээр гарга.//
 
+// const numbers = [1,2,3,4,5,6,7,8,9];
+
+// const sumMaxMin = numbers.reduce((a,b) => ({
+//   sum: a.sum + b,
+//   max: b > a.max ? b : a.max,
+//   min: b < a.min ? b : a.min, 
+// }), {sum: 0,max: numbers[0], min: numbers[0] }); 
+// console.log(sumMaxMin);
+
+
 //29.Стринг массивыг нэг мөр болгон хооронд нь таслалтайгаар нэгтгэ.//
+// const words = ["summer", "spring", "winter", "autumn"];
+
+// const result = words.reduce((acc, word, index) => 
+//   index === 0 ? word : acc + ", " + word
+// , "");
+
+// console.log(result); 
+
 
 //30.Массив дахь эерэг ба сөрөг тоонуудын тоог нэг reduce дээр тоол.//
+
+// const numbers = [-9, 15, 23, -77, -30, 99, 56];
+
+//FIND (5 бодлого) 
+
+//31. Массив дотроос анхны сөрөг тоог ол.
+
+
+//32. Хэрэглэгчдийн массиваас email таарах хэрэглэгчийг ол.
+
+//33. Бүтээгдэхүүний массиваас id тохирох бүтээгдэхүүнийг ол.
+
+//34. Урт нь 10-аас их анхны стрингийг ол.
+
+//35. Үнэ нь 10000-аас дээш анхны бүтээгдэхүүнийг ол.
+
+//SOME (5 бодлого)
+//Массив дотор сөрөг тоо байгаа эсэхийг шалга.
+//Нэрсийн массив дотор “Admin” нэр байгаа эсэхийг some ашиглан шалга.
+//Бүтээгдэхүүнүүдийн дунд үнэгүй (price = 0) зүйл байгаа эсэх.
+//Оюутнуудын дунд 90-аас дээш оноо авсан хүн байгаа эсэх.
+//Стринг массив дотор хоосон стринг байгаа эсэх.
+
+//EVERY (5 бодлого)
+//Бүх тоонууд эерэг эсэхийг шалга.
+//Бүх хэрэглэгчид 18-аас дээш настай эсэх.
+//Бүх бүтээгдэхүүн price талбартай эсэх.
+//Бүх стрингүүдийн урт 3-аас дээш эсэх.
+//Бүх boolean утга true эсэх.
+
+//SORT (5 бодлого)
+//Тоон массивыг өсөхөөр эрэмбэл.
+//Стринг массивыг цагаан толгойн дарааллаар эрэмбэл.
+//Объектын массивыг price-ээр нь өсөхөөр эрэмбэл.
+//Хэрэглэгчдийг name талбараар нь A–Z дарааллаар эрэмбэл.
+//Огноонуудын массивыг earliest → latest дарааллаар эрэмбэл.
+
+
+
+
+
